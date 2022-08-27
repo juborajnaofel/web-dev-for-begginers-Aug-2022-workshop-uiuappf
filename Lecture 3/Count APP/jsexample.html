@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+    </script>
+</head>
+<body>
+    <!-- this is a pargraph element -->
+    <p id="textP" >0</p>
+
+    <!-- this is a button element -->
+    <button onclick="fun1()" >Count</button>
+
+
+    <script>
+        var count = 0;
+        function fun1(){
+            count++;
+            let x = document.getElementById('textP');
+            x.innerText = "Clicked: "+count;
+        }
+    </script>
+    <script src="example.js"></script>
+</body>
+</html>

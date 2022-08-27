@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="textOutput"  value="0"/><br>
+    <input type="number" id="firstOperand" value="0"/>
+    <input type="number" id="secondOperand" value="0"/><br>
+    <button onclick="add()">+</button>
+    <button onclick="sub()">-</button>
+    <script>
+        // let str = "This is a string? ans: 'yes'";
+        // console.log(str);
+        function add(){
+            let output = document.getElementById("textOutput");
+            let operand1 = document.getElementById("firstOperand");
+            let operand2 = document.getElementById("secondOperand");
+            let sum = parseInt(operand1.value) + parseInt(operand2.value);
+            output.value = sum;
+        }
+        function sub(){
+            let output = document.getElementById("textOutput");
+            let operand1 = document.getElementById("firstOperand");
+            let operand2 = document.getElementById("secondOperand");
+            let sum = parseInt(operand1.value) - parseInt(operand2.value);
+            output.value = sum;
+        }
+    </script>
+</body>
+</html>

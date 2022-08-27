@@ -1,0 +1,28 @@
+/* single-line comment */
+
+/* multi-line
+comment */
+
+table, td, th {
+    border: 2px solid black;
+    font-size: 20px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 20px;
+}
+th {
+    background-color: blue;
+    color: white;
+}
+
+#table1 {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.backTable{
+    background-color: rgb(177, 177, 181);
+}
+.textTable{
+    color: #c21b1b;
+}

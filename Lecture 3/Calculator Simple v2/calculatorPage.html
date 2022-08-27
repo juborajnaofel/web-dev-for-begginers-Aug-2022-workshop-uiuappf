@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Calculator (v2)</title>
+</head>
+<body>
+    <table style="border-radius: 10px; padding: 10px;background-color: rgb(75, 75, 75);">
+        <tr>
+            <th colspan="2" color>Calculator</th>
+        </tr>
+        <tr>
+            <th style="padding:5px;" colspan="2"><input style="width: 100%;"  type="number" id="textOutput"  value="0"/></th>
+        <tr>
+        <tr>
+            <th style="padding:5px;"><input style="width: 100%;"  type="number" id="firstOperand" value="0"/></th>
+            <th style="padding:5px;"><input style="width: 100%;"  type="number" id="secondOperand" value="0"/></th>
+        </tr>
+        <tr>
+            <th colspan="2">
+            <button onclick="calculate('+')">+</button>
+            <button onclick="calculate('-')">-</button>
+            </th>
+        </tr>
+    </table>
+
+
+
+    <script>
+        // let str = "This is a string? ans: 'yes'";
+        // console.log(str);
+        function calculate(operator){
+            if(operator === '+'){
+                let output = document.getElementById("textOutput");
+                let operand1 = document.getElementById("firstOperand");
+                let operand2 = document.getElementById("secondOperand");
+                
+                output.style.backgroundColor = "green";
+                output.style.color = "yellow";
+
+                let sum = parseInt(operand1.value) + parseInt(operand2.value);
+                output.value = sum;
+            }else if(operator === '-'){
+                let output = document.getElementById("textOutput");
+                let operand1 = document.getElementById("firstOperand");
+                let operand2 = document.getElementById("secondOperand");
+
+                output.style.backgroundColor = "red";
+                output.style.color = "yellow";
+                
+                let sum = parseInt(operand1.value) - parseInt(operand2.value);
+                output.value = sum;
+            }
+        }
+    </script>
+
+
+</body>
+</html>
